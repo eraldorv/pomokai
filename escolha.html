@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomokai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="card-escolher">
+        <h1>Qual seu ESPÍRITO DE ESTUDO?</h1>
+        <p>Nesse mundo, somos abençoados com espíritos bondosos chamados de Pomokais, que são ótimos companheiros do
+            nosso
+            dia a dia.<br>
+            Nossa energia é sua principal fonte de alimento, então eles podem crescer à medida que você estuda!
+        </p>
+        <p>Esses são chamados de ESPÍRITOS DE ESTUDO. Eles refletem a forma como você vê o mundo através do
+            conhecimento:
+        </p>
+        <div class="cards-pomokais">
+            <img src="img/glaucus.png" alt="Glaucus, Dragão-Azul" class="img-pomokai">
+            <h1>Glaucus, Dragão-Azul</h1>
+            <p>Espírito majestoso com aparência similar à de uma lesma do mar. Apresenta vasta curiosidade em explorar
+                e
+                adora que seus treinadores estudem coisas novas!</p>
+        </div>
+
+        <div class="cards-pomokais">
+            <img src="img/sphin.png" alt="Sphin, Mariposa-Falcão" class="img-pomokai">
+            <h1>Sphin, Mariposa-Falcão</h1>
+            <p>Aparecia parecida com a mariposa-falcão. São extremamente ágeis e curiosos, procurando treinadores que
+                gostem de se aprofundar e testar conhecimentos.</p>
+        </div>
+
+        <div class="cards-pomokais">
+            <img src="img/dynas.png" alt="Dyna, Escaravelho" class="img-pomokai">
+            <h1>Dyna, Escaravelho</h1>
+            <p>Espíritos atentos e observadores. Gostam de prestar atenção nos arredores e são ótimos para treinadores
+                que
+                planejam todos os detalhes.</p>
+
+        </div>
+
+        <div class="the-choice">
+            <h3> O POMOKAI QUE EU ESCOLHO É O...</h3>
+            <button onclick="escolherPomokai('Glaucus')">Glaucus</button>
+            <button onclick="escolherPomokai('Sphin')">Sphin</button>
+            <button onclick="escolherPomokai('Dyna')">Dyna</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        function escolherPomokai(nome) {
+            localStorage.setItem("pomokaiInicial", nome);
+            window.location.href = "dashboard.html";
+        }
+    </script>
+
+</body>
+
+</html>

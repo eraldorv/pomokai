@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomokai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <img src="img/pomokai.png" alt="Logo do Pomokai" class="logo">
+
+    <form id="register" class="register">
+        <input type="text" name="username" placeholder="ESCOLHA SEU NOME" required class="campo-input">
+
+        <input type="password" name="password" placeholder="SENHA" required class="campo-input">
+
+        <input type="password" name="confirm_password" placeholder="CONFIRMAR SENHA" required class="campo-input">
+
+        <button type="submit" class="btn-registrar">CRIAR CONTA</button>
+    </form>
+
+<h3>Nesse mundo, somos abençoados com espíritos bondosos chamados de Pomokais, que são ótimos companheiros do
+            nosso
+            dia a dia.<br>
+            Nossa energia é sua principal fonte de alimento, então eles podem crescer à medida que você estuda!
+        </h3>
+
+<a href="escolha.html">O BOTAO QUE LEVA PRA PROXIMA PAGINA</a>
+
+
+    <script>
+        const form = document.getElementById("register");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const username = form.username.value;
+            const password = form.password.value;
+            const confirmPassword = form.confirm_password.value;
+
+            if (password !== confirmPassword) {
+                alert("As senhas não coincidem");
+                return;
+            }
+
+            console.log("Usuário criado:", username);
+
+            // aqui depois você vai conectar com o backend
+        });
+    </script>
+
+</body>
+</html>
