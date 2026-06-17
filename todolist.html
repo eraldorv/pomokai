@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomokai</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body background-color="#f0f0f0">
+
+    <header class="header">
+        <nav>
+            <ul>
+                <li class="active"><a href="todolist.html">Lista de Tarefas</a></li>
+                <li class="active"><a href="pomodoro.html">Pomodoro</a></li>
+                <li class="active"><a href="todolist.html">Campokai</a></li>
+            </ul>
+        </nav>
+
+        <div class="navperfil">
+            <nav>
+                <ul>
+                    <li><a href="#">Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <img src="img/pomokailogo.png" alt="Logo do Pomokai" class="icon">
+        </div>
+    </header>
+
+<main class="gerenciadortarefas">
+        
+        <div class="coluna-esquerda-vermelha">
+            <p style="text-align: center; font-size: 10px; font-family: 'Press Start 2P'; color: white;">MENU</p>
+        </div>
+
+        <section class="todolist-central">
+            <div class="intro-tarefas">
+                <h1>Sua Lista de Tarefas</h1>
+                <p class="intro-info">
+                    Os Pomokais se alimentam de energia. Quando você conclui uma tarefa, você gera
+                    <mark class="ectoplasma-highlight">ectoplasma</mark>!
+                </p>
+            </div>
+
+            <div class="todolistx">
+                <div class="add-tarefa">
+                    <input type="text" id="nova-tarefa" placeholder="Digite uma nova tarefa de estudo...">
+                    <button onclick="adicionarTarefa()" class="btn-adicionar">Adicionar</button>
+                </div>
+                
+                <div class="lista-container">
+                    <h2>TAREFAS ATIVAS</h2>
+                    <ul id="lista-tarefas">
+                        <li class="item-tarefa">
+                            <span class="descricao-tarefa">Exemplo de tarefa: Estudar para a prova de matemática</span>
+                            <div class="acoes-tarefa">
+                                <button class="btn-concluir" onclick="concluirTarefa(this)">TAREFA CONCLUÍDA!</button>
+                                <button class="btn-remover" onclick="removerTarefa(this)">REMOVER TAREFA</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="recompensa-tarefa" style="display: none;">
+
+            </div>
+        </section>
+
+        <div class="coluna-direita">
+            <div style="border: 3px double #000000; padding: 20px; background: #fff; height: 100%;">
+                <h2 style="font-family: 'Press Start 2P'; font-size: 12px;">POMODORO</h2>
+                <p>O temporizador vai encaixar perfeitamente aqui deste lado.</p>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+
+</html>

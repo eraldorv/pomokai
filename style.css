@@ -1,3 +1,50 @@
+header {
+    background-color: #ffffff;
+    border-bottom: 3px double #000000;
+    padding: 15px 20px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 5;
+    display: flex;
+    gap: 300px;
+}
+
+header ul li {
+    background-color: #000000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 40px 0;
+    padding: 12px 30px 10px 30px;
+    user-select: none;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.navperfil {
+    display: flex;
+    margin-left: 380px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+}
+
+.header img {
+    width: 110px;
+    height: 80px;
+}
+
+
+
+
 .register {
     text-align: center;
     width: 300px;
@@ -68,70 +115,63 @@
     text-align: center;
 }
 
-.container-tarefas {
-    background-color: #ffffff;
-    border-right: 3px double;
+
+.gerenciadortarefas {
+    display: flex;
+    flex-direction: row;      
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    box-sizing: border-box;
     padding: 20px;
-    margin-right: auto;
-    text-align: left;
-    width: 400px;
-    height: 700px;
+    gap: 20px;              
+    background-color: #f0f0f0;
 }
 
-.container-pomodoro {
+
+.coluna-esquerda-vermelha {
+    background-color: #ff0000;
+    width: 150px;            
+    min-height: 600px;
+    border: 3px double #000000; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.todolist-central {
+    flex: 1;                   
     background-color: #ffffff;
-    border-left: 3px double;
-    border-right: 3px double;
-    padding: 40px 70px 0 0;
-    margin-left: 23%;
-    width: 400px;
-    height: 700px;
+    border: 3px double #000000;
+    padding: 30px;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;    /* Empilha o conteúdo (Texto, Timer, Botões) um embaixo do outro */
-    align-items: center;       
+    flex-direction: column;
     gap: 20px;
 }
 
-header {
+
+.coluna-direita {
+    width: 400px;            
+    min-height: 600px;
+    box-sizing: border-box;
+}
+
+
+.todolist-central h1 {
+    font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.item-tarefa {
     background-color: #ffffff;
-    border-bottom: 3px double #000000;
-    padding: 15px 20px;
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-}
-
-header ul {
+    border: 2px solid #000000;
+    padding: 12px;
+    margin-bottom: 12px;
     list-style: none;
-    margin: 0;
-    padding: 5;
+    box-shadow: 4px 4px 0px #000000; 
     display: flex;
-    gap: 300px;
-}
-
-header ul li {
-    background-color: #000000;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 11px;
-    cursor: pointer;
-    margin: 40px 0;
-    padding: 12px 30px 10px 30px;
-    user-select: none;
-    font-family: "Press Start 2P", system-ui;
-}
-
-.navperfil {
-    display: flex;
-    margin-left: 380px;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-}
-
-.header img {
-    width: 110px;
-    height: 80px;
+    justify-content: space-between;
+    align-items: center;
 }
